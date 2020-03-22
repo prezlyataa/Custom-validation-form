@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.title {
+    font-size: 18px;
+}
+
 .form form {
     text-align: center;
 }
@@ -14,18 +18,33 @@
 
 .field input {
     width: 100%;
-    padding: 5px;
-    margin: 5px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .submitBtn {
     margin-top: 15px;
+    background-color: greenyellow;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
 }
+
+.submitBtn:hover {
+    cursor: pointer;
+}
+
 
 .dangerMessage {
     color: red;
 }
 
 .notValid {
-    border-color: red;
+    border-color: red!important;
 }

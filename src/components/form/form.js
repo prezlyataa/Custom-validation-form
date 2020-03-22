@@ -31,7 +31,7 @@ const Form = () => {
     return (
         <div className="wrapper">
             <div className="title">
-                <h3>Form</h3>
+                <p>Validation form</p>
             </div>
             <div className="form">
                 <form onSubmit={handleSubmit}>
@@ -40,6 +40,7 @@ const Form = () => {
                             className={`${errors.name && 'notValid'}`}
                             type="name"
                             name="name"
+                            placeholder="Name"
                             onChange={handleValueChange}
                             value={values.name || ''}
                         />
@@ -54,6 +55,7 @@ const Form = () => {
                             className={`${errors.password && 'notValid'}`}
                             type="password" 
                             name="password"
+                            placeholder="Password"
                             onChange={handleValueChange}
                             value={values.password || ''}
                         />
@@ -68,6 +70,7 @@ const Form = () => {
                             className={`${errors.email && 'notValid'}`}
                             type="email"
                             name="email"
+                            placeholder="Email"
                             onChange={handleValueChange}
                             value={values.email || ''}
                         />
